@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>講師専用ログイン</title>
+</head>
+<body>
+  <h2>スマイルスタディ 講師ログイン</h2>
+  <form onsubmit="checkLogin(); return false;">
+    <label>ユーザーID：<input type="text" id="user"></label><br>
+    <label>パスワード：<input type="password" id="pass"></label><br>
+    <button type="submit">ログイン</button>
+  </form>
+
+  <!-- 外部JavaScriptの読み込み -->
+  <script src="auth.js" defer></script>
+</body>
+</html>
