@@ -1,4 +1,4 @@
-const commonUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdgr6L6BusiaI_8sqo8W1KtLPbdrucwViklOjMA0ykY34klyw/viewform?usp=header";
+const commonUrl = "https://x.gd/mrIX3";
 
 // 👤 講師ごとのIDとパスワード
 const users = {
