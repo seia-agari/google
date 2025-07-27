@@ -1,4 +1,4 @@
-const commonUrl = "https://x.gd/mrIX3";
+const commonUrl = "https://script.google.com/macros/s/AKfycbz1_9L7zCCsczPPUyKk6ZjYfOU4_N_8vHxoXlb59k_kBtVM2awIF0PyX1-ITb3Yfj0YOg/exec";
 
 // 👤 講師ごとのIDとパスワード
 const users = {
