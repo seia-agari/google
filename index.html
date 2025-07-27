@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>講師専用ログイン</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>スマイルスタディ 講師ログイン</h2>
-  <form onsubmit="checkLogin(); return false;">
-    <label>ユーザーID：<input type="text" id="user"></label><br>
-    <label>パスワード：<input type="password" id="pass"></label><br>
-    <button type="submit">ログイン</button>
-  </form>
-
-  <!-- 外部JavaScriptの読み込み -->
-  <script src="auth.js" defer></script>
+  <div class="content">
+    <img src="スクリーンショット 2025-07-27 194433.png" alt="" height="90px" width="450px">
+    <h2>講師ログインform</h2>
+    <br>
+    <form onsubmit="checkLogin(); return false;">
+      <div class="login">
+        <label>ユーザーID：<span class="required">必須</span><br>
+          <input type="text" id="user"></label><br>
+        <br>
+        <label>パスワード：<span class="required">必須</span><br>
+          <input type="password" id="pass"></label><br>
+      <br>
+      </div>
+      <button type="submit">ログイン</button>
+    </form>
+    <!-- 外部JavaScriptの読み込み -->
+    <script src="auth.js" defer></script>
+  </div>
 </body>
 </html>
