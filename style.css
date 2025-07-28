@@ -11,17 +11,25 @@ body {
   background-repeat: no-repeat;   
   height: 100vh;       
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: 3vh 0; /* スマホでは余白を減らす */
+    align-items: flex-start; /* 上寄せ */
+  }
+}
 
 .content {
   width: 95%;
   max-width: 600px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #d1d1d1;
   background-color: white;
   box-sizing: border-box; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-height:90vh;
+  max-height: 90vh; 
+  overflow-y: auto;  
+  margin-top: 5vh;
 }
 
 button {
