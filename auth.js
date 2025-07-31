@@ -1,21 +1,18 @@
-const endpoint = "https://script.google.com/macros/s/AKfycbzKcct8pXoapKfj-F5MR5MNMJShJ9EXZKWkyomWZDcOe-xnFYiK5OyPSWy8zepazcEF4g/exec"; 
+const commonUrl = "https://script.google.com/macros/s/AKfycbz1_9L7zCCsczPPUyKk6ZjYfOU4_N_8vHxoXlb59k_kBtVM2awIF0PyX1-ITb3Yfj0YOg/exec";
 
+// 👤 講師ごとのIDとパスワード
+const users = {
+  "seia": "4869"
+};
+
+// ✅ 修正済み：関数名を大文字始まりに
 function checkLogin() {
   const id = document.getElementById("user").value.trim();
   const pass = document.getElementById("pass").value.trim();
 
-  fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id: id, password: pass })
-  })
-  .then(response => response.text())
-  .then(result => {
-    if (result === "OK") {
-      // 成功時の遷移先
-      window.location.href = "https://script.google.com/macros/s/AKfycbz1_9L7zCCsczPPUykk6ZjYfOu4_N_8vHxoXlb59k_kBtVM2awIF0PyX1-ITb3Yfj0YOg/exec";
-    } else {
-      alert("ユーザーIDまたはパスワードが間違っています");
-    }
-  });
+  if (users[id] === pass) {
+    window.location.href = commonUrl;
+  } else {
+    alert("ユーザーIDまたはパスワードが間違っています");
+  }
 }
